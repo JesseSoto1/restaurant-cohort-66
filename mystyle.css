@@ -2,18 +2,33 @@
     margin:0;
 
 }
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
 body{
-    background-image: url(tacos.avif);
+    background-image: url(rest.avif);
+    background-repeat: repeat;
     background-size: cover;
     background-position: center;
-    font-family: cursive;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
     font-size: x-large;
     font-weight: bolder;
     color: rgb(255, 255, 255);
 }
-
+.menu a{
+    color: #ffffff;
+    margin-right: 30px;
+    font-weight: bold;
+}
+.menu .link-hl{
+    color: rgb(255, 0, 247);
+}
 .container{
-    width: 80%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
 
@@ -28,7 +43,7 @@ body{
 .menu-table th{
     width: 200px;
     height: 100px;
-    background-color: rgba(31, 184, 4, 0.744);
+    background-color: rgba(52, 0, 40, 0.744);
     color: coral;
 }   
 .birria{
@@ -37,6 +52,7 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border: 2px solid rgb(255, 234, 0);
 
 }
 .torta{
@@ -45,6 +61,8 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border: 2px solid rgb(255, 234, 0);
+
 
 }
 .tacos{
@@ -53,8 +71,56 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border: 2px solid rgb(255, 234, 0);
+
 
 }
+.site-init{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+.dish-month-container{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    height: 500px;
     
+}
+.dish-month-img{
+    width: 40%;
+    border: 3px solid black;
+}
+.text-flex{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+.btn{
+    background-color: #222222;
+    color: white;
+    padding: 10px;
+}
+
+.text-lg{
+    font-size: 20px;
 
 
+}
+.text-sm{
+ font-size: 20px;
+ border: 3px solid black;
+ 
+ 
+}
+.all-dish-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+
+}
+.dish-item{
+    border: 3px solid black;
+}
