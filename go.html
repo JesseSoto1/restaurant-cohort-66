@@ -4,9 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mystyle.css">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/337be747ec.js" crossorigin="anonymous"></script>
+    <title>My Restaurant</title>
 </head>
 <body>
-    
+    <header class="site-init">
+        <div>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div>
+            <h1>El barrilito sin fondo</h1>
+        </div>
+        <nav class="menu">
+            <a class="link-hl" href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="go.html">To go</a>
+        </nav>
+        <div>
+            <i class="fa-solid fa-cart-arrow-down"></i>
+        </div>
+    </header>
+
+    <main class="container">
+         <div class="form-flex">
+            <div class="dish-month-img">
+                <img src="torta.jpg" alt="">
+            </div>
+            <div class="form-container">
+                <h2>Torta</h2>
+                <form>
+                    <div>
+                        <label>Size:</label>
+                        <select>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="input-control">
+                        <label>Price:</label>
+                        <input type="number">
+                    </div>
+                    <div class="input-control">
+                        <label>Qty:</label>
+                        <input type="number">
+                        
+                    </div>
+                    <div class="input-control">
+                        <label>Description</label>
+                        <textarea></textarea>
+                    </div>
+
+                    <button class="btn">Add</button>
+                </form>
+                
+            </div>
+        </div> 
+        
+        <div class="form-container">
+
+            
+            <h2>Payment</h2>
+            <form>
+                <div class="input-control">
+                    <label>Full Name</label>
+                    <input type="text">
+                </div>
+                <div class="input-control">
+                    <label>Credit/Debit</label>
+                    <input type="text">
+                </div>
+                <div class="input-control">
+                    <label>Exp. Date</label>
+                    <input type="text">
+                </div>
+            </form>
+        </div>
+    </main>
 </body>
-</html>
+</html>    
