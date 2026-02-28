@@ -24,6 +24,12 @@ body{
     margin-right: 30px;
     font-weight: bold;
 }
+@media(max-width:600px){
+    .menu a{
+        display: none;
+    }
+}
+
 .menu .link-hl{
     color: rgb(255, 0, 247);
 }
@@ -75,6 +81,7 @@ body{
 
 
 }
+
 .site-init{
     display: flex;
     justify-content: space-around;
@@ -92,6 +99,21 @@ body{
     width: 40%;
     border: 3px solid black;
 }
+@media(max-width:600px){
+    .dish-month-container{
+        flex-direction: column;
+    }
+    .dish-month-img{
+        width: 80%;
+    }
+    .dish-month-text{
+        with: 80%;
+    }
+    
+
+    
+}
+
 .text-flex{
     display: flex;
     justify-content: space-between;
@@ -103,6 +125,7 @@ body{
     color: white;
     padding: 10px;
     border: none;
+
 }
 
 .text-lg{
@@ -122,6 +145,13 @@ body{
     column-gap: 20px;
 
 }
+@media(max-width:600px){
+    .all-dish-container{
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 20px;
+    }
+}
+
 .dish-item{
     border: 3px solid black;
 }
@@ -132,11 +162,22 @@ body{
     align-items: center;
 }
 
-.form-container{
+.form-container-dish{
     background-color: #000000;
     border-radius: 10px;
     padding: 20px;
 }
+.form-container{
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 20px;}
+
+@media(max-width:600px){
+    .form-flex{
+        flex-direction: column;
+    }
+}
+
 .input-control{
     margin: 20px auto;
 }
@@ -150,3 +191,4 @@ body{
 .input-control label{
     font-size: ;
 }
+
